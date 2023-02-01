@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './components/Header';
 
-
 export default function App() {
   const [todos, setTodos] = useState([
     { text: 'buy coffee', key: '1' },
@@ -32,4 +31,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  content: {
+    padding: 40,
+  },
+  list: {
+    marginTop: 10,
+  }
 });
